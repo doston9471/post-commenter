@@ -1,24 +1,31 @@
-# README
+# Post comment
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Simple real-time post commenting app with custom user authentication and online/offline feature
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+1. Clone the repository
+2. Run `bundle install`
+3. Run `rails db:migrate`
+4. Run `rails server` or `bin/dev`
 
-* System dependencies
+## Linting
 
-* Configuration
+```bash
+bin/rubocop -A
+```
 
-* Database creation
+## Usage
 
-* Database initialization
+1. Create some `User` to authenticate to the post commenting page. P.S. You can use `db/seeds.rb`
+2. Login to the system
+3. Left some comments
 
-* How to run the test suite
+## TODO
+- [ ] Styling changes
+- [ ] Cover with tests
+- [ ] ...
 
-* Services (job queues, cache servers, search engines, etc.)
+## License
 
-* Deployment instructions
-
-* ...
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
