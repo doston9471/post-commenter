@@ -58,6 +58,7 @@
       </div>
     <% end %>
     <div class="container mt-5">
+      <%= turbo_stream_from :presence, channel: PresenceChannel if current_user %>
       <%= yield %>
     </div>
 

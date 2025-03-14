@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Blabber</h1>
+  <h4>A Rails, Hotwire demo</h4>
+
+  <%= render partial: "form" %>
+
+
+  <%= turbo_stream_from "posts" %>
+  <%= render @posts %>
+</div>

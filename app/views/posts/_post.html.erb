@@ -1,0 +1,13 @@
+<%= turbo_stream_from post %>
+<div class="card mb-2" id="<%= dom_id(post) %>">
+  <div class="card-body">
+    <h5 class="card-title text-muted">
+      <small class="float-right">
+        Posted <%= time_ago_in_words(post.created_at) %> ago
+      </small>
+      <i class="bi bi-circle-fill align-middle text <%= post.user.online? ? 'text-success' : 'text-danger'%>" style="font-size: .5rem"></i>
+      <%= post.user.email %>
+    </h5>
+    <div class="card-text lead mb-2"><%= post.message %></div>
+  </div>
+</div>
